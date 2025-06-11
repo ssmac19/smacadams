@@ -1,0 +1,1379 @@
+<!doctype html>
+<html
+  lang="en"
+  data-ws-project="49e9895a-3412-46ff-bc92-1a952f75d82f"
+  data-ws-last-published="2025-06-11T02:53:50.562Z"
+>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/static/app_generated_index-6937cd5a.COIWO1pS.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://url/36d" />
+    <title>Untitled</title>
+    <meta property="og:title" content="Untitled" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="twitter:card" content="summary_large_image" />
+  </head>
+  <body
+    class="w-body cctqyt9 c11rvx63 c1swrhdm cxfvk94 c1dkn6i8 cbmahpf cbitl6c"
+  >
+    <div style="display: contents">
+      <div style="display: contents">
+        <div class="w-html-embed">
+          <style>
+            :root {
+              /* Variables for vavez-link */
+              --vavez-link-color: white;
+              --vavez-link-hover-weight: 800;
+              --vavez-link-normal-weight: 200;
+              --vavez-link-dimmed-weight: 100;
+              --vavez-link-opacity: 1;
+              --vavez-link-dimmed-opacity: 0.7;
+
+              /* Variables for werk-link */
+              --werk-link-color: black;
+              --werk-link-hover-weight: 800;
+              --werk-link-normal-weight: 200;
+              --werk-link-dimmed-weight: 100;
+              --werk-link-opacity: 1;
+              --werk-link-dimmed-opacity: 0.7;
+            }
+
+            /* vavez-link styles */
+            .vavez-link {
+              color: var(--vavez-link-color);
+              font-weight: var(--vavez-link-normal-weight);
+              opacity: var(--vavez-link-opacity);
+              transition:
+                font-weight 0.3s,
+                opacity 0.3s;
+            }
+
+            .vavez-link:hover {
+              font-weight: var(--vavez-link-hover-weight);
+              opacity: var(--vavez-link-opacity);
+            }
+
+            .vavez-link-container:hover .vavez-link:not(:hover) {
+              font-weight: var(--vavez-link-dimmed-weight);
+              opacity: var(--vavez-link-dimmed-opacity);
+            }
+
+            /* werk-link styles */
+            .werk-link {
+              color: var(--werk-link-color);
+              font-weight: var(--werk-link-normal-weight);
+              opacity: var(--werk-link-opacity);
+              transition:
+                font-weight 0.3s,
+                opacity 0.3s;
+            }
+
+            .werk-link:hover {
+              font-weight: var(--werk-link-hover-weight);
+              opacity: var(--werk-link-opacity);
+            }
+
+            .werk-link-container:hover .werk-link:not(:hover) {
+              font-weight: var(--werk-link-dimmed-weight);
+              opacity: var(--werk-link-dimmed-opacity);
+            }
+          </style>
+        </div>
+        <div class="w-box"></div>
+        <div
+          class="w-box c1xay5p5 ce8egnp cax1192 c7eolnj cxn0je3 c1rqao95 c57aytk cmn2p15 c31926d c1tky79e c1j061gu csxvigj cx91v43"
+        >
+          <div
+            class="w-box c18odeqx c1iaf89g c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cem517v cfsp0ag c17sbdvv c1tky79e c1xay5p5 cjypgxe cax1192 cnbf1cq cth0o8e"
+          >
+            <div class="w-html-embed cig9sn3 c14crm3v c2rt9ue">
+              <meta charset="UTF-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+              />
+              <title>Toggle Switch</title>
+              <style>
+                /* Switch Container */
+                .switch {
+                  --line: #505162; /* Line color */
+                  --circle-fill-light: #505162; /* Darker fill for circle in light mode */
+                  --circle-fill-dark: #1f1f1f; /* Dark fill for circle in dark mode */
+                  --circle-stroke-light: #f7f8ff; /* Light stroke for circle in light mode */
+                  --circle-stroke-dark: #f7f8ff; /* White stroke for circle in dark mode */
+                  --duration: 0.4s; /* Animation duration */
+                  cursor: pointer;
+                  display: inline-block;
+                }
+
+                .switch input {
+                  display: none; /* Hide the actual checkbox */
+                }
+
+                /* The capsule (track) */
+                .switch input + div {
+                  position: relative;
+                  width: 56px; /* Length of the switch */
+                  height: 24px; /* Height to fit the circle */
+                  background-color: transparent; /* No background, set in Webstudio */
+                  border-radius: 12px; /* Rounded capsule */
+                  transition: background-color var(--duration) ease;
+                }
+
+                /* Thin line inside the capsule */
+                .switch input + div::before {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 100%;
+                  height: 4px; /* Thin line height */
+                  background-color: var(--line); /* Line color */
+                  border-radius: 2px; /* Round the ends of the line */
+                  transform: translateY(-50%);
+                }
+
+                /* Circle (dot) */
+                .switch input + div::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 24px;
+                  height: 24px;
+                  background-color: var(
+                    --circle-fill-light
+                  ); /* Start with dark fill in light mode */
+                  border-radius: 50%;
+                  box-shadow: inset 0 0 0 6px var(--circle-stroke-light); /* Light stroke for light mode */
+                  transform: translate(0, -50%);
+                  transition:
+                    transform var(--duration) ease,
+                    box-shadow var(--duration) ease,
+                    background-color var(--duration) ease;
+                }
+
+                /* Inward-growing effect in dark mode */
+                .switch input:checked + div::after {
+                  transform: translateX(32px) translateY(-50%); /* Slide the circle to the right */
+                  background-color: var(
+                    --circle-fill-dark
+                  ); /* Dark fill for the circle */
+                  box-shadow: inset 0 0 0 12px var(--circle-stroke-dark); /* Inward-growing white stroke in dark mode */
+                }
+
+                /* Dark mode body background change */
+                body.dark-mode {
+                  background-color: #262730; /* Dark background */
+                  color: white;
+                  transition:
+                    background-color var(--duration),
+                    color var(--duration);
+                }
+              </style>
+
+              <div class="toggle-box">
+                <label class="switch">
+                  <input type="checkbox" id="modeSwitch" />
+                  <div></div>
+                </label>
+              </div>
+
+              <script>
+                // Function to apply dark or light mode
+                function applyMode(mode) {
+                  if (mode === "dark") {
+                    document.body.classList.add("dark-mode");
+                    document.getElementById("modeSwitch").checked = true;
+                  } else {
+                    document.body.classList.remove("dark-mode");
+                    document.getElementById("modeSwitch").checked = false;
+                  }
+                }
+
+                // On page load, check for stored mode
+                document.addEventListener("DOMContentLoaded", function () {
+                  const storedMode = localStorage.getItem("mode") || "light";
+                  applyMode(storedMode);
+                });
+
+                // Event listener for the toggle switch
+                document
+                  .getElementById("modeSwitch")
+                  .addEventListener("change", function () {
+                    const mode = this.checked ? "dark" : "light";
+                    localStorage.setItem("mode", mode);
+                    applyMode(mode);
+                  });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-box c1xay5p5 ce8egnp c11rvx63 c1swrhdm cxfvk94 cbitl6c c1dkn6i8 cbmahpf"
+    >
+      <div
+        class="w-box ce8egnp c1tky79e c2vkf6j c1xay5p5 cxfvk94 csli8nj c1dkn6i8 cbmahpf c11rvx63 c1swrhdm c18g22r3 cpctajy"
+      >
+        <div
+          class="w-box c1xay5p5 ce8egnp cr1urly c7q0fva cz4rxtu cj2jpro c1q29ob cmn2p15 c1tky79e c1e6r74n c1awwp61"
+        >
+          <div
+            class="w-box ce8egnp c7lqqm7 c1dkn6i8 cbmahpf c1tky79e c1xay5p5 cax1192 cxshhpm c457u7u c1mcbzmj ces7br2"
+          >
+            <div class="w-vimeo c1tky79e c7lqqm7 ce8egnp">
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1uav5dm c14dbe66 ce8egnp cf71ajm c1y5905s cvfu2g1 c1p86ul3 cjhr7ty cc9lygw"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              /><button
+                type="submit"
+                aria-label="Play button"
+                class="w-play-button c1uav5dm ccipaq3 colvqyc cuc1h0w cqu9e2u clf71oc c17dsm76 c1xay5p5 c11rvx63 cxp4r09 cofgdsp cixrk7h c1gnc6r c1fptxs3 ct5zso3 cucut57 caog4vy crj4mxk c19qt9lt cu83gxy c1ugzsd2 c12f85ea"
+              >
+                <div aria-hidden="true" class="w-box c1xsoqk6 c102lg4s">
+                  <div class="w-html-embed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 22 22"
+                      fill="currentColor"
+                      width="100%"
+                      height="100%"
+                      style="display: block"
+                    >
+                      <path
+                        d="M4.766 5.765c0-.725 0-1.088.178-1.288a.93.93 0 0 1 .648-.294c.294-.015.65.186 1.359.588l9.234 5.235c.586.332.88.498.982.708.09.183.09.389 0 .572-.102.21-.396.376-.982.708l-9.234 5.235c-.71.402-1.065.603-1.359.588a.93.93 0 0 1-.648-.294c-.178-.2-.178-.563-.178-1.288V5.765Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-box c1xay5p5 ch89x8k c1tky79e cax1192 c12xwjv c11tyt6f c1unbgsf c6vh5ve c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c1w61e0b cpa15sz cjypgxe cfryeo c1y97ztx cwzcng5 c48tnea c5ij80k c31djil c1lgdy3n c15br9xw c1h5ddri chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box c1xay5p5 ch89x8k c1tky79e cax1192 c12xwjv c11tyt6f c1unbgsf c6vh5ve c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c1w61e0b cpa15sz cjypgxe cfryeo c1y97ztx cwzcng5 c48tnea c5ij80k c31djil c1lgdy3n c15br9xw c1h5ddri chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box ch89x8k c1bji792 c12xwjv c1xay5p5 c11rvx63 cxp4r09 c1dkn6i8 cbmahpf c1tky79e cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cfryeo c1qtcbbc c1as7x5w chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box c1xay5p5 ch89x8k c1tky79e cax1192 c12xwjv c11tyt6f c1unbgsf c6vh5ve c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cr1urly c1yb4pmf cfryeo c1qtcbbc cwzcng5 c48tnea c5ij80k c31djil c1lgdy3n c15br9xw c1h5ddri chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cumd0wa c1unbgsf cjypgxe chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cpa15sz c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c11rvx63 cxp4r09 cjypgxe chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cfpc3tu c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box ch89x8k c1bji792 c12xwjv c1xay5p5 cmn2p15 cz4rxtu c1dkn6i8 cbmahpf c1tky79e cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cfryeo c1qtcbbc c1as7x5w chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cumd0wa c1unbgsf c1yb4pmf chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cfpc3tu c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box ch89x8k c1bji792 c12xwjv c1xay5p5 c11rvx63 cxp4r09 c1dkn6i8 cbmahpf c1tky79e cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cfryeo c1qtcbbc c1as7x5w chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cfpc3tu c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09 cxfvk94 c457u7u cxshhpm chyvpur"
+          >
+            <div
+              class="w-box cax1192 c1xay5p5 ce8egnp c601aww c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09 c171675e"
+            >
+              <div
+                class="w-box cax1192 c1xay5p5 ce8egnp c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09"
+              >
+                <div
+                  class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+                >
+                  <img
+                    alt="Vimeo video preview image"
+                    sizes="100vw"
+                    class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                    srcset="
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-box cax1192 c1xay5p5 ce8egnp c601aww c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09 c171675e"
+            >
+              <div
+                class="w-box cax1192 c1xay5p5 ce8egnp c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09"
+              >
+                <div
+                  class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+                >
+                  <img
+                    alt="Vimeo video preview image"
+                    sizes="100vw"
+                    class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                    srcset="
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box cfpc3tu c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09 cxfvk94 c457u7u cxshhpm chyvpur"
+          >
+            <div
+              class="w-box cax1192 c1xay5p5 ce8egnp c601aww c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09 c171675e"
+            >
+              <div
+                class="w-box cax1192 c1xay5p5 ce8egnp c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09"
+              >
+                <div
+                  class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+                >
+                  <img
+                    alt="Vimeo video preview image"
+                    sizes="100vw"
+                    class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                    srcset="
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-box cax1192 c1xay5p5 ce8egnp c601aww c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09 c171675e"
+            >
+              <div
+                class="w-box cax1192 c1xay5p5 ce8egnp c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr c86ogjk c11rvx63 cxp4r09"
+              >
+                <div
+                  class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+                >
+                  <img
+                    alt="Vimeo video preview image"
+                    sizes="100vw"
+                    class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                    srcset="
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-box c1xay5p5 ch89x8k c1tky79e cax1192 c12xwjv c11tyt6f c1unbgsf c6vh5ve c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cfryeo c1y97ztx cwzcng5 c48tnea c5ij80k c31djil c1lgdy3n c15br9xw c1h5ddri chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box c1cavhrm c1xay5p5 ch89x8k c12xwjv c1tky79e c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cumd0wa c1unbgsf c1yb4pmf chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box ch89x8k c1bji792 c12xwjv c1xay5p5 c11rvx63 cxp4r09 c1dkn6i8 cbmahpf c1tky79e cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cfryeo c1qtcbbc c1as7x5w chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cumd0wa c1unbgsf c1yb4pmf chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box ch89x8k c1bji792 c12xwjv c1xay5p5 c11rvx63 cxp4r09 c1dkn6i8 cbmahpf c1tky79e cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cfryeo c1qtcbbc c1as7x5w chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cumd0wa c1unbgsf c1yb4pmf chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e c11rvx63 cxp4r09 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cumd0wa c1unbgsf c1yb4pmf chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box ch89x8k c1bji792 c12xwjv c1xay5p5 c11rvx63 cxp4r09 c1dkn6i8 cbmahpf c1tky79e cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr cfryeo c1qtcbbc c1as7x5w chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                class="w-preview-image cbx8yk6 cam9aq0 c1fff15u cpyk6kb cq68f0s c1nz6ycl co5rclf cixc1j1 c1uav5dm c14dbe66 ce8egnp cf71ajm cc9lygw c1dkn6i8 cbmahpf"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                sizes="(min-width: 1280px) 50vw, 100vw"
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  384w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          >
+            <div
+              class="w-vimeo c1tky79e cuxj9b3 ce8egnp c1dkn6i8 cbmahpf c1xay5p5"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1tky79e c14dbe66 ce8egnp cf71ajm c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cc9lygw c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII="
+                srcset="
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  640w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  750w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII=  828w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1080w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1200w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 1920w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 2048w,
+                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkOAMAANIAzr59FiYAAAAASUVORK5CYII= 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-box cax1192 c1xay5p5 ch89x8k c12xwjv c1tky79e cfsp0ag c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1kntacv c1aekagh c13kprqn ctws0rr chyvpur"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div style="display: contents">
+      <div style="display: contents">
+        <div
+          class="w-box c1xay5p5 cr1urly cbitl6c c11rvx63 cxp4r09 ce8egnp c230o2r c193w0bs c1004hbn"
+        >
+          <div class="w-box c1xay5p5 cr1urly c11rvx63 cxp4r09 ce8egnp c230o2r">
+            <div
+              class="w-box c1tky79e c1xay5p5 c12xwjv crybgvu c11rvx63 cxp4r09 cax1192"
+            >
+              <a href="/" target="_self" class="w-link footy-link"
+                ><div class="w-html-embed">
+                  <!--?xml version="1.0" encoding="utf-8"?-->
+                  <svg
+                    fill="#FFFFFF"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M222.927 580.115l301.354 328.512c24.354 28.708 20.825 71.724-7.883 96.078s-71.724 20.825-96.078-7.883L19.576 559.963a67.846 67.846 0 01-13.784-20.022 68.03 68.03 0 01-5.977-29.488l.001-.063a68.343 68.343 0 017.265-29.134 68.28 68.28 0 011.384-2.6 67.59 67.59 0 0110.102-13.687L429.966 21.113c25.592-27.611 68.721-29.247 96.331-3.656s29.247 68.721 3.656 96.331L224.088 443.784h730.46c37.647 0 68.166 30.519 68.166 68.166s-30.519 68.166-68.166 68.166H222.927z"
+                    ></path>
+                  </svg></div
+              ></a>
+            </div>
+            <div
+              class="w-box c1xay5p5 crybgvu c11rvx63 cxp4r09 c230o2r c1e6r74n c1awwp61 c1tky79e cq5sz6v cbypioa cvf2eft c113gbh9"
+            >
+              <div class="w-html-embed">
+                <style>
+                  /* Style for the button */
+                  .menu-btn {
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    position: relative; /* Allow positioning */
+                  }
+
+                  /* Menu content styling */
+                  .menu-popup {
+                    position: absolute;
+                    display: none; /* Hidden by default */
+                    flex-direction: column;
+                    background-color: white;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    padding: 10px;
+                    min-width: 200px;
+                    z-index: 100; /* Higher z-index to ensure it is on top */
+                    bottom: 48px; /* Pop up above the button */
+                    right: 0;
+                  }
+
+                  .menu-popup a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 8px 10px;
+                  }
+
+                  .menu-popup a:hover {
+                    background-color: #f0f0f0;
+                  }
+
+                  /* Show the menu when triggered */
+                  .menu-popup.show {
+                    display: flex; /* Make the menu visible */
+                  }
+                </style>
+              </div>
+              <div class="w-html-embed">
+                <script>
+                  // Event listener to toggle the visibility of the menu
+                  document
+                    .getElementById("menu-trigger")
+                    .addEventListener("click", function () {
+                      const menu = document.getElementById("menu-content");
+                      if (menu) {
+                        menu.classList.toggle("show"); // Toggle 'show' class to show/hide the menu
+                      } else {
+                        console.error("Menu content not found.");
+                      }
+                    });
+                </script>
+              </div>
+              <div class="w-html-embed c8urqej cq5sz6v">
+                <!-- SVG Button that triggers the menu -->
+                <button id="menu-trigger" class="menu-btn">
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.7071 4.29289C12.3166 3.90237 11.6834 3.90237 11.2929 4.29289L7.29289 8.29289C6.90237 8.68342 6.90237 9.31658 7.29289 9.70711C7.68342 10.0976 8.31658 10.0976 8.70711 9.70711L12 6.41421L15.2929 9.70711C15.6834 10.0976 16.3166 10.0976 16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289L12.7071 4.29289ZM7.29289 15.7071L11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071L16.7071 15.7071C17.0976 15.3166 17.0976 14.6834 16.7071 14.2929C16.3166 13.9024 15.6834 13.9024 15.2929 14.2929L12 17.5858L8.70711 14.2929C8.31658 13.9024 7.68342 13.9024 7.29289 14.2929C6.90237 14.6834 6.90237 15.3166 7.29289 15.7071Z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </svg>
+                </button>
+
+                <!-- Pop-up Menu Content (Hidden by default) -->
+                <div id="menu-content" class="menu-popup">
+                  <a href="/uda1">Uda1</a>
+                  <a href="/coldbrew">Guardian Cold Brew</a>
+                  <a href="/st00py">St00pid</a>
+                  <a href="/dusty">Box Beyond the Dust</a>
+                  <div class="spacer"></div>
+                  <a href="/36d">36 Days of Type</a>
+                  <a href="/illustration">Illustration</a>
+                  <div class="spacer"></div>
+                  <a href="/shurts">Short Films &amp; Animations</a>
+                  <a href="/lab">Lab</a>
+                  <div class="spacer"></div>
+                  <a href="/about">About</a>
+                  <a href="/contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "_urlRewrite": null,
+        "pageId": "/pages/36d",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/36d",
+          "system": { "params": {}, "search": {}, "origin": "https://url" },
+          "resources": {},
+          "pageMeta": {
+            "title": "Untitled",
+            "description": "",
+            "excludePageFromSearch": true,
+            "language": "",
+            "socialImageAssetName": "!undefined",
+            "socialImageUrl": "",
+            "status": 200,
+            "redirect": "",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script id="vike_globalContext" type="application/json">
+      {}
+    </script>
+    <script
+      src="/assets/entries/entry-server-routing.BxQ0X4a5.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_36d.NQUxJbby.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-CWR1XEZR.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-BC1_CxMP.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-CxNgoGuH.js"
+      as="script"
+      type="text/javascript"
+    />
+  </body>
+</html>

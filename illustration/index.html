@@ -1,0 +1,1316 @@
+<!doctype html>
+<html
+  lang="en"
+  data-ws-project="49e9895a-3412-46ff-bc92-1a952f75d82f"
+  data-ws-last-published="2025-06-11T02:53:50.562Z"
+>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/static/app_generated_index-6937cd5a.COIWO1pS.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://url/illustration" />
+    <title>Untitled</title>
+    <meta property="og:title" content="Untitled" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="w-body cax1192">
+    <div style="display: contents">
+      <div style="display: contents">
+        <div class="w-html-embed">
+          <style>
+            :root {
+              /* Variables for vavez-link */
+              --vavez-link-color: white;
+              --vavez-link-hover-weight: 800;
+              --vavez-link-normal-weight: 200;
+              --vavez-link-dimmed-weight: 100;
+              --vavez-link-opacity: 1;
+              --vavez-link-dimmed-opacity: 0.7;
+
+              /* Variables for werk-link */
+              --werk-link-color: black;
+              --werk-link-hover-weight: 800;
+              --werk-link-normal-weight: 200;
+              --werk-link-dimmed-weight: 100;
+              --werk-link-opacity: 1;
+              --werk-link-dimmed-opacity: 0.7;
+            }
+
+            /* vavez-link styles */
+            .vavez-link {
+              color: var(--vavez-link-color);
+              font-weight: var(--vavez-link-normal-weight);
+              opacity: var(--vavez-link-opacity);
+              transition:
+                font-weight 0.3s,
+                opacity 0.3s;
+            }
+
+            .vavez-link:hover {
+              font-weight: var(--vavez-link-hover-weight);
+              opacity: var(--vavez-link-opacity);
+            }
+
+            .vavez-link-container:hover .vavez-link:not(:hover) {
+              font-weight: var(--vavez-link-dimmed-weight);
+              opacity: var(--vavez-link-dimmed-opacity);
+            }
+
+            /* werk-link styles */
+            .werk-link {
+              color: var(--werk-link-color);
+              font-weight: var(--werk-link-normal-weight);
+              opacity: var(--werk-link-opacity);
+              transition:
+                font-weight 0.3s,
+                opacity 0.3s;
+            }
+
+            .werk-link:hover {
+              font-weight: var(--werk-link-hover-weight);
+              opacity: var(--werk-link-opacity);
+            }
+
+            .werk-link-container:hover .werk-link:not(:hover) {
+              font-weight: var(--werk-link-dimmed-weight);
+              opacity: var(--werk-link-dimmed-opacity);
+            }
+          </style>
+        </div>
+        <div class="w-box"></div>
+        <div
+          class="w-box c1xay5p5 ce8egnp cax1192 c7eolnj cxn0je3 c1rqao95 c57aytk cmn2p15 c31926d c1tky79e c1j061gu csxvigj cx91v43"
+        >
+          <div
+            class="w-box c18odeqx c1iaf89g c1mqg3ts ccokpev c1yuuo7m c1t7tzaj cem517v cfsp0ag c17sbdvv c1tky79e c1xay5p5 cjypgxe cax1192 cnbf1cq cth0o8e"
+          >
+            <div class="w-html-embed cig9sn3 c14crm3v c2rt9ue">
+              <meta charset="UTF-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+              />
+              <title>Toggle Switch</title>
+              <style>
+                /* Switch Container */
+                .switch {
+                  --line: #505162; /* Line color */
+                  --circle-fill-light: #505162; /* Darker fill for circle in light mode */
+                  --circle-fill-dark: #1f1f1f; /* Dark fill for circle in dark mode */
+                  --circle-stroke-light: #f7f8ff; /* Light stroke for circle in light mode */
+                  --circle-stroke-dark: #f7f8ff; /* White stroke for circle in dark mode */
+                  --duration: 0.4s; /* Animation duration */
+                  cursor: pointer;
+                  display: inline-block;
+                }
+
+                .switch input {
+                  display: none; /* Hide the actual checkbox */
+                }
+
+                /* The capsule (track) */
+                .switch input + div {
+                  position: relative;
+                  width: 56px; /* Length of the switch */
+                  height: 24px; /* Height to fit the circle */
+                  background-color: transparent; /* No background, set in Webstudio */
+                  border-radius: 12px; /* Rounded capsule */
+                  transition: background-color var(--duration) ease;
+                }
+
+                /* Thin line inside the capsule */
+                .switch input + div::before {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 100%;
+                  height: 4px; /* Thin line height */
+                  background-color: var(--line); /* Line color */
+                  border-radius: 2px; /* Round the ends of the line */
+                  transform: translateY(-50%);
+                }
+
+                /* Circle (dot) */
+                .switch input + div::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 24px;
+                  height: 24px;
+                  background-color: var(
+                    --circle-fill-light
+                  ); /* Start with dark fill in light mode */
+                  border-radius: 50%;
+                  box-shadow: inset 0 0 0 6px var(--circle-stroke-light); /* Light stroke for light mode */
+                  transform: translate(0, -50%);
+                  transition:
+                    transform var(--duration) ease,
+                    box-shadow var(--duration) ease,
+                    background-color var(--duration) ease;
+                }
+
+                /* Inward-growing effect in dark mode */
+                .switch input:checked + div::after {
+                  transform: translateX(32px) translateY(-50%); /* Slide the circle to the right */
+                  background-color: var(
+                    --circle-fill-dark
+                  ); /* Dark fill for the circle */
+                  box-shadow: inset 0 0 0 12px var(--circle-stroke-dark); /* Inward-growing white stroke in dark mode */
+                }
+
+                /* Dark mode body background change */
+                body.dark-mode {
+                  background-color: #262730; /* Dark background */
+                  color: white;
+                  transition:
+                    background-color var(--duration),
+                    color var(--duration);
+                }
+              </style>
+
+              <div class="toggle-box">
+                <label class="switch">
+                  <input type="checkbox" id="modeSwitch" />
+                  <div></div>
+                </label>
+              </div>
+
+              <script>
+                // Function to apply dark or light mode
+                function applyMode(mode) {
+                  if (mode === "dark") {
+                    document.body.classList.add("dark-mode");
+                    document.getElementById("modeSwitch").checked = true;
+                  } else {
+                    document.body.classList.remove("dark-mode");
+                    document.getElementById("modeSwitch").checked = false;
+                  }
+                }
+
+                // On page load, check for stored mode
+                document.addEventListener("DOMContentLoaded", function () {
+                  const storedMode = localStorage.getItem("mode") || "light";
+                  applyMode(storedMode);
+                });
+
+                // Event listener for the toggle switch
+                document
+                  .getElementById("modeSwitch")
+                  .addEventListener("change", function () {
+                    const mode = this.checked ? "dark" : "light";
+                    localStorage.setItem("mode", mode);
+                    applyMode(mode);
+                  });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-box c1xay5p5 c11rvx63 c1swrhdm ce8egnp c1dkn6i8 cbmahpf cxfvk94 cbitl6c c5iack4 c1ut1f3b csli8nj c1tky79e c18g22r3 cpctajy"
+    >
+      <div
+        class="w-box c1xay5p5 cxfvk94 c11rvx63 c1swrhdm cbitl6c ce8egnp c1tky79e c7pg0w6 ck8m4xb c1dkn6i8 cbmahpf"
+      >
+        <div
+          class="w-box c1xay5p5 c11rvx63 cxp4r09 cbx8yk6 cam9aq0 c1fff15u cpyk6kb carhojz c1u241ks cy1q9zd c1lfsi3m c1tky79e ce8egnp c1dkn6i8 cbmahpf c1xhm7o3"
+        >
+          <img
+            alt=""
+            width="1920"
+            height="1080"
+            src="/assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif"
+            class="w-image ce8egnp c7lqqm7 c1dkn6i8 cbmahpf c1xay5p5 c11rvx63 cxp4r09 c1tky79e"
+            sizes="100vw"
+            srcset="
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif   16w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif   32w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif   48w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif   64w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif   96w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif  128w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif  256w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif  384w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif  640w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif  750w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif  828w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif 1080w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif 1200w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif 1920w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif 2048w,
+              /assets/rules_silver_optimized_QYz4sPcC4cFFEfzKGZRDj.gif 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="w-box c1xay5p5 c11rvx63 cxp4r09 c1dkn6i8 cbmahpf carhojz c1u241ks cy1q9zd c1lfsi3m cbx8yk6 cam9aq0 c1fff15u cpyk6kb c1tky79e ce8egnp c1xhm7o3"
+        >
+          <img
+            alt=""
+            width="1920"
+            height="1080"
+            src="/assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif"
+            class="w-image ce8egnp c7lqqm7 c1dkn6i8 cbmahpf c1tky79e c1xay5p5 c11rvx63 cxp4r09"
+            sizes="100vw"
+            srcset="
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif   16w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif   32w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif   48w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif   64w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif   96w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif  128w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif  256w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif  384w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif  640w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif  750w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif  828w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif 1080w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif 1200w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif 1920w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif 2048w,
+              /assets/rules_rusty_optimized_v21Qp-Jzq1vZfa0B6nY5k.gif 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div
+        class="w-box c1xay5p5 c11rvx63 cxp4r09 ce8egnp cbitl6c c1dkn6i8 cbmahpf c1tky79e"
+      >
+        <div class="w-box c1xay5p5 c11rvx63 cxp4r09 c1qh34ez c1ich7t6 c1rxwhj6">
+          <img
+            alt=""
+            width="2550"
+            height="3300"
+            src="/assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg"
+            class="w-image ce8egnp c14a2s7t c11dnzru"
+            sizes="100vw"
+            srcset="
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg   16w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg   32w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg   48w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg   64w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg   96w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg  128w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg  256w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg  384w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg  640w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg  750w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg  828w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg 1080w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg 1200w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg 1920w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg 2048w,
+              /assets/sal_moon_50percent_fix_compress_RtcIAFQSMZ3rf1n_XN9Lc.jpg 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div
+        class="w-box ce8egnp c1xay5p5 c11rvx63 c1swrhdm cxfvk94 cbitl6c c13v5x3u c18pb7fr c1dkn6i8 cbmahpf c1tky79e ckzqzh6 c1jwx248"
+      >
+        <div
+          class="w-box ce8egnp c1tky79e c1xay5p5 c187p5qg c11rvx63 c1swrhdm cr1urly cj3iazt cebfo2j c1jwx248 ckzqzh6"
+        >
+          <div
+            class="w-box c1xay5p5 cr1urly c18odeqx cf71ajm c1tky79e c11rvx63 c1swrhdm cgrynz c1v3a98n c12xwjv c13bnkjp c1jwx248 ckzqzh6 cj3iazt c3fu479"
+          >
+            <img
+              alt=""
+              width="1080"
+              height="1080"
+              src="/assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg"
+              class="w-image c11ef78x c12xwjv c1xay5p5 ce8egnp c1bji792"
+              sizes="100vw"
+              srcset="
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg   16w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg   32w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg   48w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg   64w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg   96w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg  128w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg  256w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg  384w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg  640w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg  750w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg  828w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg 1080w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg 1200w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg 1920w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg 2048w,
+                /assets/cantri22_2E2u_Gb0ebDjKHxl8j6G6.svg 3840w
+              "
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="w-box c1tky79e c1xay5p5 c11rvx63 cxp4r09 c1w4x33j cad7hno c193w0bs c7q0fva c14dbe66 c1h5lhtr c15lu4ff cf71ajm c13bnkjp c1l9dcwp"
+          >
+            <div
+              class="w-box cbyyl09 c9fl2wi c1xay5p5 c11rvx63 c1swrhdm c1tky79e cph0zet c12frvk cxfaduj c16v1dmf cmpw8m"
+            >
+              <div
+                class="w-text c1xay5p5 ce8egnp cf71ajm c11rvx63 cxp4r09 c1ugzsd2 c1tky79e chkgvke cxfaduj c12frvk clx7ac ckpfney covyd3 cj3iazt c16v1dmf cmpw8m"
+              >
+                Collective Arts Network (CAN) is a nonprofit organization
+                serving the visual arts industry in and around Cleveland,
+                providing a public forum for promotion, reporting, and reviews.
+                Its primary projects are the quarterly print magazine CAN
+                Journal, the website CANjournal.org, its blog, and the
+                e-newsletter CAN Weekly. Additional projects include CAN
+                Triennial, a regionally focused, curated art exhibit.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-box c1xay5p5 c11rvx63 c1swrhdm ce8egnp cad7hno c1dkn6i8 cbmahpf crapwal cgs7qr5 c17x7llo c1qrvmpq cr1urly cbitl6c c1tky79e c7vhdgz cbx8yk6 cam9aq0 c1fff15u cpyk6kb c31djil c1lgdy3n crcti95"
+        >
+          <div
+            class="w-box c1xay5p5 c1js22t5 c1dkn6i8 cbmahpf c1tky79e cbx8yk6 cam9aq0 c1fff15u cpyk6kb crapwal cgs7qr5 c17x7llo c1qrvmpq c12xwjv c1bds6d8 cgy836l"
+          >
+            <div
+              class="w-vimeo c1tky79e c12xwjv ce8egnp c1qh34ez cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+            >
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1uav5dm c14dbe66 ce8egnp cf71ajm cq68f0s c1nz6ycl co5rclf cixc1j1 cc9lygw cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+                src="/assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png"
+                srcset="
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png  640w,
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png  750w,
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png  828w,
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png 1080w,
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png 1200w,
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png 1920w,
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png 2048w,
+                  /assets/urhere_jose_thumb_Atb0EGqah5DvY8tvCGeCP.png 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-box c1xay5p5 c11rvx63 c1swrhdm ce8egnp cad7hno c1dkn6i8 cbmahpf crapwal cgs7qr5 c17x7llo c1qrvmpq cr1urly c1tky79e cbitl6c ch02pp cbx8yk6 cam9aq0 c1fff15u cpyk6kb c31djil c1lgdy3n cl1wk0 crcti95"
+        >
+          <div
+            class="w-box c1js22t5 c1xay5p5 c1tky79e c1dkn6i8 cbmahpf c12xwjv cbx8yk6 cam9aq0 c1fff15u cpyk6kb crapwal cgs7qr5 c17x7llo c1qrvmpq cmn2p15 cz4rxtu cr1urly cbitl6c c31djil c1lgdy3n c1bds6d8 cgy836l"
+          >
+            <div class="w-vimeo c1tky79e c12xwjv ce8egnp">
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1uav5dm c14dbe66 ce8egnp cf71ajm cq68f0s c1nz6ycl co5rclf cixc1j1 cc9lygw"
+                src="/assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png"
+                srcset="
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png  640w,
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png  750w,
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png  828w,
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png 1080w,
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png 1200w,
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png 1920w,
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png 2048w,
+                  /assets/urhere_ja_thumb_EGla_M2-5tQsyx1Nj076m.png 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-box c1xay5p5 c11rvx63 c1swrhdm ce8egnp cad7hno c1dkn6i8 cbmahpf ckfksk7 cmdqtru c1pthq8x c6gck0r c1tky79e cqwo8it crcti95 c31djil c1lgdy3n"
+        >
+          <div
+            class="w-box c1xay5p5 cmn2p15 cz4rxtu cr1urly cbitl6c c1js22t5 c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb crapwal cgs7qr5 c17x7llo c1qrvmpq c1tky79e c1rxwhj6 c31djil c1lgdy3n"
+          >
+            <div class="w-vimeo c1tky79e c12xwjv ce8egnp">
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1uav5dm c14dbe66 ce8egnp cf71ajm cq68f0s c1nz6ycl co5rclf cixc1j1 cc9lygw"
+                src="/assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png"
+                srcset="
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png  640w,
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png  750w,
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png  828w,
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png 1080w,
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png 1200w,
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png 1920w,
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png 2048w,
+                  /assets/urhere_mylesthumb_HXpQqxCsrFBV1jUDjQv4q.png 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-box c1xay5p5 c11rvx63 cxp4r09 ce8egnp cad7hno c1dkn6i8 cbmahpf ckfksk7 cmdqtru c1pthq8x c6gck0r cr1urly cbitl6c"
+        >
+          <div
+            class="w-box c1xay5p5 cmn2p15 cxp4r09 cxfvk94 cbitl6c cv2uiua c1cz434u c2sgwy8 c12xwjv c1tky79e c1dkn6i8 cbmahpf cbx8yk6 cam9aq0 c1fff15u cpyk6kb crapwal cgs7qr5 c17x7llo c1qrvmpq cyokpu cgy836l"
+          >
+            <div class="w-vimeo c1tky79e c12xwjv ce8egnp">
+              <img
+                alt="Vimeo video preview image"
+                sizes="100vw"
+                class="w-preview-image c1uav5dm c14dbe66 ce8egnp cf71ajm cq68f0s c1nz6ycl co5rclf cixc1j1 cc9lygw"
+                src="/assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png"
+                srcset="
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png  640w,
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png  750w,
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png  828w,
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png 1080w,
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png 1200w,
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png 1920w,
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png 2048w,
+                  /assets/urhere_mike_thumb_JWUIZwjivMSGbNFHRHKej.png 3840w
+                "
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-box ce8egnp c1xay5p5 cxfvk94 cz4rxtu c11rvx63 c1uuz022 c1dkn6i8 cbmahpf c7pg0w6 ck8m4xb c1tky79e"
+      >
+        <img
+          alt=""
+          width="5000"
+          height="1920"
+          src="/assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png"
+          class="w-image c1xay5p5 ce8egnp c1tky79e"
+          sizes="100vw"
+          srcset="
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png   16w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png   32w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png   48w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png   64w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png   96w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png  128w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png  256w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png  384w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png  640w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png  750w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png  828w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png 1080w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png 1200w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png 1920w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png 2048w,
+            /assets/meow_frank_QoB5dbdf-3rZuSrTxvsJN.png 3840w
+          "
+          decoding="async"
+          loading="lazy"
+        />
+        <div
+          class="w-box c1xay5p5 c11rvx63 cb6glp5 ce8egnp cxfaduj cr1urly c1dkn6i8 cbmahpf cbitl6c cxjtc0 c1hju3vt c15lu4ff c7pg0w6 ck8m4xb"
+        >
+          <img
+            alt=""
+            width="960"
+            height="960"
+            src="/assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png"
+            class="w-image c12xwjv c1uih5g8 c1tky79e"
+            sizes="100vw"
+            srcset="
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png   16w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png   32w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png   48w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png   64w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png   96w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png  128w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png  256w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png  384w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png  640w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png  750w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png  828w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png 1080w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png 1200w,
+              /assets/meow_thumb_greyfuzz__x1fl3xfh7e3-EapNEAia.png 1920w
+            "
+            decoding="async"
+            loading="lazy"
+          /><img
+            alt=""
+            width="960"
+            height="960"
+            src="/assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png"
+            class="w-image c12xwjv c1uih5g8 c1tky79e"
+            sizes="100vw"
+            srcset="
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png   16w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png   32w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png   48w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png   64w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png   96w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png  128w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png  256w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png  384w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png  640w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png  750w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png  828w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png 1080w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png 1200w,
+              /assets/meow_thumb_oilyblack_3UQMrlk8Z_RZxDzW87QQ8.png 1920w
+            "
+            decoding="async"
+            loading="lazy"
+          /><img
+            alt=""
+            width="960"
+            height="960"
+            src="/assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png"
+            class="w-image c1xay5p5 cr1urly cbitl6c cz4rxtu c1uih5g8 c12xwjv c1tky79e"
+            sizes="100vw"
+            srcset="
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png   16w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png   32w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png   48w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png   64w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png   96w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png  128w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png  256w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png  384w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png  640w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png  750w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png  828w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png 1080w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png 1200w,
+              /assets/meow_thumb_orange_tP4Q1zG3-r1hJvLCWtc7o.png 1920w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+        <img
+          alt=""
+          width="5000"
+          height="1921"
+          src="/assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png"
+          class="w-image ce8egnp c1tky79e"
+          sizes="100vw"
+          srcset="
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png   16w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png   32w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png   48w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png   64w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png   96w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png  128w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png  256w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png  384w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png  640w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png  750w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png  828w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png 1080w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png 1200w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png 1920w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png 2048w,
+            /assets/meow_ollie_OjUbv7YvLSxL7e2GlUsij.png 3840w
+          "
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+      <div
+        class="w-box c1xay5p5 ce8egnp c1dkn6i8 cbmahpf c11rvx63 cz4rxtu c1tky79e cj2jpro c1q29ob cr1urly cbitl6c c1cpnzbg"
+      >
+        <img
+          alt=""
+          width="960"
+          height="540"
+          src="/assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg"
+          class="w-image c1xay5p5 c11rvx63 cxp4r09 ce8egnp chbg414 c1qh34ez cmihfdk"
+          sizes="100vw"
+          srcset="
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg   16w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg   32w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg   48w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg   64w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg   96w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg  128w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg  256w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg  384w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg  640w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg  750w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg  828w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg 1080w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg 1200w,
+            /assets/bloods2_compressed_XEDfHoTB0D8BfPEV0x1EB.jpg 1920w
+          "
+          decoding="async"
+          loading="lazy"
+        /><img
+          alt=""
+          width="960"
+          height="540"
+          src="/assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg"
+          class="w-image c1xay5p5 c11rvx63 cxp4r09 ce8egnp chbg414 c1qh34ez cmihfdk"
+          sizes="100vw"
+          srcset="
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg   16w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg   32w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg   48w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg   64w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg   96w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg  128w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg  256w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg  384w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg  640w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg  750w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg  828w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg 1080w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg 1200w,
+            /assets/bloods1_compressed_dAdaIQ9NnXS5Pg3sHlaHn.jpg 1920w
+          "
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+      <div
+        class="w-box ce8egnp c1xay5p5 c1tky79e c1dkn6i8 cbmahpf c1jwx248 ckzqzh6 c16v1dmf cmpw8m"
+      >
+        <div
+          class="w-box c1xay5p5 cr1urly c11rvx63 cxp4r09 cy3q6k2 c1cpnzbg cgy836l"
+        >
+          <div
+            class="w-box c1js22t5 c1xay5p5 c1tky79e c16v1dmf cmpw8m c1o0poez"
+          >
+            <img
+              alt=""
+              width="1632"
+              height="1224"
+              src="/assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg"
+              class="w-image"
+              sizes="100vw"
+              srcset="
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg   16w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg   32w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg   48w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg   64w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg   96w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg  128w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg  256w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg  384w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg  640w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg  750w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg  828w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg 1080w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg 1200w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg 1920w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg 2048w,
+                /assets/bloodbook_1compressed_Vh44ZIRw6uPxo80oEXTVX.jpg 3840w
+              "
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="w-box c1js22t5 c1xay5p5 c11rvx63 cxp4r09 c1tky79e cam2reh cf71ajm c16v1dmf cmpw8m c1o0poez"
+          >
+            <img
+              alt=""
+              width="720"
+              height="404"
+              src="/assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif"
+              class="w-image c1vcvdm cpvygy ce8egnp c11ew85q c1xay5p5"
+              sizes="100vw"
+              srcset="
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif   16w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif   32w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif   48w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif   64w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif   96w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif  128w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif  256w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif  384w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif  640w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif  750w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif  828w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif 1080w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif 1200w,
+                /assets/bloodbook_2compressed_by4mGL5mpr1OmHT7yKDLm.gif 1920w
+              "
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-box c1tky79e c1xay5p5 c11rvx63 cxp4r09 ce8egnp c1dkn6i8 cbmahpf"
+      >
+        <div
+          class="w-box c1js22t5 c12xwjv c1tky79e c1dkn6i8 cbmahpf c731i3m cr4tmwh c1hos29s c1r5i8w7 c1xay5p5 c4vbwdr c1ich7t6 c19c755"
+        >
+          <div class="w-vimeo c1tky79e c12xwjv ce8egnp c1xay5p5 cf71ajm">
+            <img
+              alt="Vimeo video preview image"
+              sizes="100vw"
+              class="w-preview-image c1uav5dm c14dbe66 ce8egnp cf71ajm cq68f0s c1nz6ycl co5rclf cixc1j1 cc9lygw cbx8yk6 cam9aq0 c1fff15u cpyk6kb"
+              src="/assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png"
+              srcset="
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png  640w,
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png  750w,
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png  828w,
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png 1080w,
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png 1200w,
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png 1920w,
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png 2048w,
+                /assets/legthumbhqcompressed_wHWQWDVOBj7jXL7BZQKUa.png 3840w
+              "
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-box c1xay5p5 c1tky79e ce8egnp cr1urly c11rvx63 cz4rxtu ca8cb2t c1dkn6i8 cbmahpf c1uuz022 cebfo2j ccxf57f c1jwx248 c151tlf1 covyd3 c4rhb41 cp1qypz c1f9qw5 c1tlod28"
+      >
+        <div
+          class="w-box c1uih5g8 c1tluvql c1xay5p5 c11rvx63 cxp4r09 c8urqej c1dkn6i8 cbmahpf c1ypnolt cm2yk3u c1o0poez"
+        >
+          <img
+            alt=""
+            width="1664"
+            height="2048"
+            src="/assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg"
+            class="w-image czfkchn c1mwnv5m cvwpvci cy3q6k2 c1oqwypr"
+            sizes="100vw"
+            srcset="
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg   16w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg   32w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg   48w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg   64w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg   96w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg  128w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg  256w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg  384w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg  640w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg  750w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg  828w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg 1080w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg 1200w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg 1920w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg 2048w,
+              /assets/rickrudepants_compress_Z0MsaEDXoEcD4UbCxbM7U.jpg 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="w-box c1uih5g8 c12xwjv c1xay5p5 c11rvx63 cxp4r09 c8urqej c1dkn6i8 cbmahpf c1ypnolt cm2yk3u c16v1dmf cmpw8m cy3q6k2 c1o0poez ccgyfy9 ch7onxi"
+        >
+          <img
+            alt=""
+            width="1200"
+            height="1278"
+            src="/assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg"
+            class="w-image ce8egnp cy6x1cx c1xay5p5 cm2yk3u cy3q6k2"
+            sizes="100vw"
+            srcset="
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg   16w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg   32w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg   48w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg   64w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg   96w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg  128w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg  256w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg  384w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg  640w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg  750w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg  828w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg 1080w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg 1200w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg 1920w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg 2048w,
+              /assets/paulbearer_compress_SqtqgFmwv3CIIuN-Xs6mT.jpg 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="w-box c1uih5g8 c1tluvql c1xay5p5 c11rvx63 cxp4r09 c8urqej c1dkn6i8 cbmahpf c1ypnolt cm2yk3u cy3q6k2 c16v1dmf cmpw8m c1o0poez"
+        >
+          <img
+            alt=""
+            width="1664"
+            height="2048"
+            src="/assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg"
+            class="w-image c1mwnv5m c1oqwypr cy3q6k2"
+            sizes="100vw"
+            srcset="
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg   16w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg   32w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg   48w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg   64w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg   96w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg  128w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg  256w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg  384w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg  640w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg  750w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg  828w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg 1080w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg 1200w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg 1920w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg 2048w,
+              /assets/razorramont_compress_Zis4GLQT4aaJ6nQmXUfEl.jpg 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="w-box ce8egnp c1xay5p5 c1tky79e c1dkn6i8 cbmahpf">
+        <img
+          alt=""
+          width="1400"
+          height="1102"
+          src="/assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg"
+          class="w-image c1xay5p5 ce8egnp cr7nnit c1dkn6i8 cbmahpf"
+          sizes="100vw"
+          srcset="
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg   16w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg   32w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg   48w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg   64w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg   96w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg  128w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg  256w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg  384w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg  640w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg  750w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg  828w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg 1080w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg 1200w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg 1920w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg 2048w,
+            /assets/v2-worms-1400_NFLowsrQsbzg1IiIl8gNV.jpg 3840w
+          "
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+      <div class="w-box ce8egnp c1tky79e cctqyt9">
+        <div class="w-box ce8egnp c1xay5p5 cr1urly cz4rxtu cxshhpm c457u7u">
+          <img
+            alt=""
+            width="600"
+            height="615"
+            src="/assets/brewbox1_-pglMxwIBU66sywJjk32s.png"
+            class="w-image c1xay5p5 c1js22t5 cikltyq"
+            sizes="100vw"
+            srcset="
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png   16w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png   32w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png   48w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png   64w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png   96w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png  128w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png  256w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png  384w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png  640w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png  750w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png  828w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png 1080w,
+              /assets/brewbox1_-pglMxwIBU66sywJjk32s.png 1200w
+            "
+            decoding="async"
+            loading="lazy"
+          /><img
+            alt=""
+            width="600"
+            height="615"
+            src="/assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png"
+            class="w-image c1xay5p5 c1js22t5 cikltyq"
+            sizes="100vw"
+            srcset="
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png   16w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png   32w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png   48w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png   64w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png   96w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png  128w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png  256w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png  384w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png  640w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png  750w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png  828w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png 1080w,
+              /assets/brewbox2_0UQHL5zwQ3HIFnUNbsjaw.png 1200w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+        <div class="w-box ce8egnp">
+          <img
+            alt=""
+            width="1360"
+            height="566"
+            src="/assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png"
+            class="w-image ce8egnp cikltyq"
+            sizes="100vw"
+            srcset="
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png   16w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png   32w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png   48w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png   64w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png   96w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png  128w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png  256w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png  384w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png  640w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png  750w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png  828w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png 1080w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png 1200w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png 1920w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png 2048w,
+              /assets/brewbox3_Xjwijs0zfr05NT5Oin6GF.png 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div
+        class="w-box ce8egnp c1xay5p5 cr1urly cbitl6c cz4rxtu c1tky79e cr89fae"
+      >
+        <img
+          alt=""
+          width="960"
+          height="960"
+          src="/assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png"
+          class="w-image c1xay5p5 c2ej3jo c12xwjv c1xekstz"
+          sizes="100vw"
+          srcset="
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png   16w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png   32w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png   48w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png   64w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png   96w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png  128w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png  256w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png  384w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png  640w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png  750w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png  828w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png 1080w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png 1200w,
+            /assets/hedgehog_still_jdseRo4mou-lUrqd2jIa9.png 1920w
+          "
+          decoding="async"
+          loading="lazy"
+        /><img
+          alt=""
+          width="960"
+          height="960"
+          src="/assets/snail_still_Lkt-evijqJaom454h8_CS.png"
+          class="w-image c1xay5p5 c2ej3jo c12xwjv c1xekstz"
+          sizes="100vw"
+          srcset="
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png   16w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png   32w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png   48w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png   64w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png   96w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png  128w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png  256w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png  384w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png  640w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png  750w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png  828w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png 1080w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png 1200w,
+            /assets/snail_still_Lkt-evijqJaom454h8_CS.png 1920w
+          "
+          decoding="async"
+          loading="lazy"
+        /><img
+          alt=""
+          width="960"
+          height="960"
+          src="/assets/owl_still_FQ013ea_wqAxWMatYqwBX.png"
+          class="w-image c1xay5p5 c2ej3jo c12xwjv c1xekstz"
+          sizes="100vw"
+          srcset="
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png   16w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png   32w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png   48w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png   64w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png   96w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png  128w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png  256w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png  384w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png  640w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png  750w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png  828w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png 1080w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png 1200w,
+            /assets/owl_still_FQ013ea_wqAxWMatYqwBX.png 1920w
+          "
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+      <div class="w-box c1wo6bto c1tky79e">
+        <div
+          class="w-box ce8egnp c1xay5p5 cr1urly cz4rxtu cxshhpm c457u7u c7q0fva c1cpnzbg"
+        >
+          <img
+            alt=""
+            width="700"
+            height="700"
+            src="/assets/walter700_ez5BPViA8X_PW_KPDEwol.png"
+            class="w-image c1xay5p5 c1js22t5 cikltyq c1o0poez"
+            sizes="100vw"
+            srcset="
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png   16w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png   32w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png   48w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png   64w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png   96w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png  128w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png  256w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png  384w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png  640w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png  750w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png  828w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png 1080w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png 1200w,
+              /assets/walter700_ez5BPViA8X_PW_KPDEwol.png 1920w
+            "
+            decoding="async"
+            loading="lazy"
+          /><img
+            alt=""
+            width="700"
+            height="700"
+            src="/assets/zoob700_22tOBc8Pf01inW4-aSffC.png"
+            class="w-image c1xay5p5 c1js22t5 cikltyq c1o0poez"
+            sizes="100vw"
+            srcset="
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png   16w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png   32w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png   48w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png   64w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png   96w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png  128w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png  256w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png  384w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png  640w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png  750w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png  828w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png 1080w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png 1200w,
+              /assets/zoob700_22tOBc8Pf01inW4-aSffC.png 1920w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="w-box"></div>
+    <div style="display: contents">
+      <div style="display: contents">
+        <div
+          class="w-box c1xay5p5 cr1urly cbitl6c c11rvx63 cxp4r09 ce8egnp c230o2r c193w0bs c1004hbn"
+        >
+          <div class="w-box c1xay5p5 cr1urly c11rvx63 cxp4r09 ce8egnp c230o2r">
+            <div
+              class="w-box c1tky79e c1xay5p5 c12xwjv crybgvu c11rvx63 cxp4r09 cax1192"
+            >
+              <a href="/" target="_self" class="w-link footy-link"
+                ><div class="w-html-embed">
+                  <!--?xml version="1.0" encoding="utf-8"?-->
+                  <svg
+                    fill="#FFFFFF"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M222.927 580.115l301.354 328.512c24.354 28.708 20.825 71.724-7.883 96.078s-71.724 20.825-96.078-7.883L19.576 559.963a67.846 67.846 0 01-13.784-20.022 68.03 68.03 0 01-5.977-29.488l.001-.063a68.343 68.343 0 017.265-29.134 68.28 68.28 0 011.384-2.6 67.59 67.59 0 0110.102-13.687L429.966 21.113c25.592-27.611 68.721-29.247 96.331-3.656s29.247 68.721 3.656 96.331L224.088 443.784h730.46c37.647 0 68.166 30.519 68.166 68.166s-30.519 68.166-68.166 68.166H222.927z"
+                    ></path>
+                  </svg></div
+              ></a>
+            </div>
+            <div
+              class="w-box c1xay5p5 crybgvu c11rvx63 cxp4r09 c230o2r c1e6r74n c1awwp61 c1tky79e cq5sz6v cbypioa cvf2eft c113gbh9"
+            >
+              <div class="w-html-embed">
+                <style>
+                  /* Style for the button */
+                  .menu-btn {
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    position: relative; /* Allow positioning */
+                  }
+
+                  /* Menu content styling */
+                  .menu-popup {
+                    position: absolute;
+                    display: none; /* Hidden by default */
+                    flex-direction: column;
+                    background-color: white;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    padding: 10px;
+                    min-width: 200px;
+                    z-index: 100; /* Higher z-index to ensure it is on top */
+                    bottom: 48px; /* Pop up above the button */
+                    right: 0;
+                  }
+
+                  .menu-popup a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 8px 10px;
+                  }
+
+                  .menu-popup a:hover {
+                    background-color: #f0f0f0;
+                  }
+
+                  /* Show the menu when triggered */
+                  .menu-popup.show {
+                    display: flex; /* Make the menu visible */
+                  }
+                </style>
+              </div>
+              <div class="w-html-embed">
+                <script>
+                  // Event listener to toggle the visibility of the menu
+                  document
+                    .getElementById("menu-trigger")
+                    .addEventListener("click", function () {
+                      const menu = document.getElementById("menu-content");
+                      if (menu) {
+                        menu.classList.toggle("show"); // Toggle 'show' class to show/hide the menu
+                      } else {
+                        console.error("Menu content not found.");
+                      }
+                    });
+                </script>
+              </div>
+              <div class="w-html-embed c8urqej cq5sz6v">
+                <!-- SVG Button that triggers the menu -->
+                <button id="menu-trigger" class="menu-btn">
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.7071 4.29289C12.3166 3.90237 11.6834 3.90237 11.2929 4.29289L7.29289 8.29289C6.90237 8.68342 6.90237 9.31658 7.29289 9.70711C7.68342 10.0976 8.31658 10.0976 8.70711 9.70711L12 6.41421L15.2929 9.70711C15.6834 10.0976 16.3166 10.0976 16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289L12.7071 4.29289ZM7.29289 15.7071L11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071L16.7071 15.7071C17.0976 15.3166 17.0976 14.6834 16.7071 14.2929C16.3166 13.9024 15.6834 13.9024 15.2929 14.2929L12 17.5858L8.70711 14.2929C8.31658 13.9024 7.68342 13.9024 7.29289 14.2929C6.90237 14.6834 6.90237 15.3166 7.29289 15.7071Z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </svg>
+                </button>
+
+                <!-- Pop-up Menu Content (Hidden by default) -->
+                <div id="menu-content" class="menu-popup">
+                  <a href="/uda1">Uda1</a>
+                  <a href="/coldbrew">Guardian Cold Brew</a>
+                  <a href="/st00py">St00pid</a>
+                  <a href="/dusty">Box Beyond the Dust</a>
+                  <div class="spacer"></div>
+                  <a href="/36d">36 Days of Type</a>
+                  <a href="/illustration">Illustration</a>
+                  <div class="spacer"></div>
+                  <a href="/shurts">Short Films &amp; Animations</a>
+                  <a href="/lab">Lab</a>
+                  <div class="spacer"></div>
+                  <a href="/about">About</a>
+                  <a href="/contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "_urlRewrite": null,
+        "pageId": "/pages/illustration",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/illustration",
+          "system": { "params": {}, "search": {}, "origin": "https://url" },
+          "resources": {},
+          "pageMeta": {
+            "title": "Untitled",
+            "description": "",
+            "excludePageFromSearch": true,
+            "language": "",
+            "socialImageAssetName": "!undefined",
+            "socialImageUrl": "",
+            "status": 200,
+            "redirect": "",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script id="vike_globalContext" type="application/json">
+      {}
+    </script>
+    <script
+      src="/assets/entries/entry-server-routing.BxQ0X4a5.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_illustration.Cfveydnd.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-CWR1XEZR.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-BC1_CxMP.js"
+      as="script"
+      type="text/javascript"
+    />
+  </body>
+</html>
